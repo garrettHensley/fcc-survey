@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1 id="title">Survey Time!</h1>
+      <p id="description">
+        <em>Thanks for taking your time to take this survey.</em>
+      </p>
+    </div>
+    <div id="survey">
+      <form id="survey-form">
+        <div>
+          <label id="name-label" for="name">Name</label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Whats your name?"
+            required
+          />
+        </div>
+        <div>
+          <label id="email-label" for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div>
+          <label id="number-label" for="number">Age</label>
+          <input
+            id="number"
+            type="number"
+            min="13"
+            max="150"
+            placeholder="How old are you?"
+            required
+          />
+        </div>
+        <div>
+          <label for="dropdown">Favorite Animal</label>
+          <select id="dropdown">
+            <option disabled selected>Please Choose One</option>
+            <option>Cat</option>
+            <option>Dog</option>
+            <option>Hamster</option>
+            <option>Armadillo</option>
+          </select>
+        </div>
+        <div>
+          <label>Are you having a good time?</label>
+          <input name="radio" type="radio" value="yes" />
+          <label class="radio-check">Yes</label>
+        </div>
+        <div>
+          <input name="radio" type="radio" value="no" />
+          <label class="radio-check">No</label>
+        </div>
+        <div>
+          <input name="radio" type="radio" value="not sure" />
+          <label class="radio-check">Not sure</label>
+        </div>
+        <div>
+          <label>What activities do you enjoy?</label>
+          <input name="checkbox" type="checkbox" value="cycling" />
+          <label class="radio-check">Cycling</label>
+        </div>
+        <div>
+          <input name="checkbox" type="checkbox" value="running" />
+          <label class="radio-check">Running</label>
+        </div>
+        <div>
+          <input name="checkbox" type="checkbox" value="sitting" />
+          <label class="radio-check">Sitting</label>
+        </div>
+        <div>
+          <label for="feedback">Feedback</label>
+          <textarea id="feedback">Leave us some Feedback, would ya?</textarea>
+        </div>
+        <div class="button-container">
+          <button id="submit">Submit!</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400&display=swap");
+
+  html body {
+    font-size: large;
+    background-color: #cfe3e1;
+    font-family: "Roboto Slab", serif;
+  }
+
+  #header {
+    text-align: center;
+    font-weight: 100 !important;
+    color: #9881aa;
+    width: 50%;
+    margin: auto;
+  }
+  #title {
+    font-size: 5em;
+    font-weight: 100 !important;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #survey {
+    margin: auto;
+    background-color: #261e33;
+    color: #cfe3e1;
+    max-width: 50%;
+    padding: 1em;
+    border-radius: 0.3em;
+  }
+  form div {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  label {
+    font-size: large;
+    float: left;
+    width: 100%;
+    margin-bottom: 0.2em;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    background-color: white;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 0.3em;
+    border: none;
+  }
+  .radio-check {
+    font-size: large;
+    float: none;
+    width: 10% !important;
+    margin-bottom: 0.4em;
+  }
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  button {
+    padding: 0.5em;
+    font-size: 1em;
+  }
+</style>
